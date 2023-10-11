@@ -1,0 +1,363 @@
+/*|| General Styles*/
+
+/* Pallette colours
+    #E0D8B0
+    #FCFFE7
+    #DEA057
+    #CE9461
+
+
+
+h1,
+h2,
+h3 {
+    font-family: "Blanks Script Font";
+    font-size: 200%;
+}
+*/
+
+/*adds Blanks Script Font*/
+@font-face {
+  font-family: "Blanks Script Font";
+  src: url(../fonts/BlanksscriptpersonaluseBdit-jEM6O.otf);
+  font-size: 200%;
+}
+
+* {
+  background-color: #FCFFE7;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*|| Link styles*/
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0A5F6b;
+  text-decoration: none;
+}
+
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+/*|| Header Styles*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-bottom: 2px black solid;
+}
+
+header h1{
+  font-size: 48px;
+  display: flex;
+  align-self: center;
+  font-family: "Blanks Script Font";
+}
+
+/*|| Nav Bar Styles*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: right;
+  list-style-type: none;
+} 
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #E0D8B0;
+}
+
+nav a.active {
+  background-color:#E0D8B0;
+  color: black;
+}
+
+/*||General Section Styles*/
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  border-bottom: 2px black solid;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+section h3 {
+  font-family: "Blanks Script Font";
+  font-size: 200%;
+}
+
+/*changes the attributes of the spotify embed widget*/
+
+#listen {
+  border: none;
+  flex-grow: 8;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#listen iframe {
+  box-shadow: 7px 10px #E0D8B0;
+}
+
+#section-1 {
+  justify-content: space-around;
+}
+
+#section-3 {
+  border-left: none;
+}
+
+/*||General Article Styles*/
+
+article {
+  display: flex;
+  align-content: space-between;
+  max-width: 50%;
+  padding-left: 2%;
+}
+
+article h3 {
+  font-family: "Blanks Script Font";
+}
+
+article div {
+  flex-direction: column;
+  justify-self:flex-end;
+  align-self: center;
+}
+
+/*Sets styles for intro paragraph*/
+
+
+
+#intro {
+  flex-direction: column;
+  justify-self:flex-start;
+  align-self:auto;
+  padding-right: 2%;
+  border: none;
+}
+
+/*Profile picture styles*/
+
+#profile {
+  justify-self:flex-start;
+  margin-top: 5%;
+  margin-right: 5%;
+  max-width: 50%;
+  max-height: 75%;
+  border: 2px solid black;
+  box-shadow: 7px 10px #E0D8B0;
+}
+
+/*|| Form Styles*/
+
+#send-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#send-message ul {
+  list-style-type: none;
+  justify-self: center;
+  align-self: center;
+}
+
+#send-message ul > textarea {
+  border: 2px solid black;
+  resize: vertical;
+}
+
+/*|| Card Styles*/
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+  max-width: 15%;
+  border-left: 2px solid black;
+}
+
+
+.card img {
+  margin-top: 20px;
+  max-width: 230px;
+  max-height: 345px;
+  justify-self: center;
+  align-self: center;
+  border: 2px solid black;
+  box-shadow: 7px 10px #E0D8B0;
+}
+
+.card ~ #last {
+  border-right: 2px solid black;
+}
+
+.card:hover,
+.card:hover img,
+.card:hover a,
+.card:hover h3,
+.card:hover p {
+  background-color: #E0D8B0;
+}
+
+/*||Footer Styles*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+/*Contact me styles*/
+
+.contact-me {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.contact-me ul, .contact-me li {
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 5px;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+/*||Accessibility Styles*/
+
+
+/*mobile settings*/
+@media screen and (max-width: 968px) {
+  
+  /*Styles the mobile version of the header*/
+  header {
+      justify-content: center !important;
+      align-content: center !important;
+      flex-flow:column wrap;
+  }
+  
+  /*Styles the mobile version of the footer*/
+
+  footer {
+      justify-content: center !important;
+      align-content: center !important;
+      flex-flow:column wrap;
+  }
+
+  footer > div {
+      align-self: center;
+  }
+  
+
+  /*Styles the mobile version of the articles*/
+
+  article {
+      display: flex;
+      flex-flow: column;
+      align-content: flex-start;
+      justify-content: flex-start;
+      justify-self: center;
+      align-self: center;
+      max-width: 50%;
+      border: none;
+      padding-left: 2%;
+      border-bottom: 2px solid black;
+      
+  }
+
+  /*Styles the mobile version of the spotify embed*/
+
+  #listen {
+      border: none;
+      border-bottom: 2px solid black;
+  }
+
+  /*Styles the mobile version of the profile image*/
+
+  #profile {
+      margin-top: 5%;
+      margin-right: 5%;
+      max-width: 150% !important;
+      max-height: 175% !important;
+      border: 2px solid black;
+  }
+
+  
+  /*Styles the mobile version of the sections*/
+
+  section {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      border: none !important;
+      border-bottom: 2px solid black !important;
+  }
+
+   /*Styles the mobile version of the intro paragraph*/
+
+  #intro {
+      border: none;
+      justify-self: center;
+      align-self: center;
+  }
+
+
+  /*Styles the mobile version of the cards*/
+
+  .card {
+      border: none;
+      border-bottom: 2px solid black;
+  }
+
+  .card ~ #last {
+      border: none;  
+  }
+}
